@@ -15,6 +15,8 @@ if (os.type() === 'Darwin') {
     platform = 'macosx';
 } else if (os.type() === 'Linux') {
     platform = 'linux';
+} else if (os.type() === 'Windows_NT') {
+    platform = 'windows';
 } else {
     throw new Error('Unknown OS!');
 }
